@@ -1,3 +1,4 @@
+### Health Checker
 GET http://localhost:8080/api/health-checker
 Accept: application/json
 
@@ -16,11 +17,11 @@ GET http://localhost:8080/api/games
 Content-Type: application/json
 
 ### get game by ID
-GET http://localhost:8080/api/games/game/404d1f58-50de-4d28-877d-a5a70ec9d2a7
+GET http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09
 Content-Type: application/json
 
 ### update game by ID
-PUT http://localhost:8080/api/games/game/02cb45a4-aa29-423b-a1ad-01b78de133df
+PUT http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09
 Content-Type: application/json
 
 {
@@ -29,4 +30,4 @@ Content-Type: application/json
 }
 
 ### delete game by ID
-DELETE http://localhost:8080/api/games/game/404d1f58-50de-4d28-877d-a5a70ec9d2a7
+DELETE http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09

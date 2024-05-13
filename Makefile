@@ -15,8 +15,11 @@ install:
 # SQLX-CLI
 	cargo install sqlx-cli
 
-build:
-	cargo build
+create_project_structure:
+	mkdir -p src/models
+	mkdir -p src/routes
+	touch src/models/mod.rs
+	touch src/routes/mod.rs
 
 create_docker_container:
 	docker run --name ${DB_DOCKER_CONTAINER} -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:16-alpine
