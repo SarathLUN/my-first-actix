@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/health-checker
+Accept: application/json
+
+### create game
+POST http://localhost:8080/api/games/game
+Content-Type: application/json
+
+{
+  "field_name":"Soccer Planet",
+  "address": "444 NW Miami FL 32342",
+  "day": "Mon 12-00"
+}
+
+### get all games
+GET http://localhost:8080/api/games
+Content-Type: application/json
+
+### get game by ID
+GET http://localhost:8080/api/games/game/404d1f58-50de-4d28-877d-a5a70ec9d2a7
+Content-Type: application/json
+
+### update game by ID
+PUT http://localhost:8080/api/games/game/02cb45a4-aa29-423b-a1ad-01b78de133df
+Content-Type: application/json
+
+{
+  "field_name":"Soccer UPDATED",
+  "address": "UPDATED ADDRESS"
+}
+
+### delete game by ID
+DELETE http://localhost:8080/api/games/game/404d1f58-50de-4d28-877d-a5a70ec9d2a7
