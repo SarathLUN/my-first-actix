@@ -55,6 +55,13 @@ GET http://localhost:8080/api/health-checker
 Accept: application/json
 ```
 
+- Or you can use `cURL` command
+
+```shell
+curl -X GET --location "http://localhost:8080/api/health-checker" \
+    -H "Accept: application/json"
+```
+
 - output:
 
 ![Health Checker](/images%2FScreenshot%202024-05-13%20at%2011.12.55%E2%80%AFPM.png)
@@ -73,6 +80,18 @@ Content-Type: application/json
 }
 ```
 
+- Or `cURL`
+
+```shell
+curl -X POST --location "http://localhost:8080/api/games/game" \
+    -H "Content-Type: application/json" \
+    -d '{
+          "field_name":"Soccer Planet",
+          "address": "444 NW Miami FL 32342",
+          "day": "Mon 12-00"
+        }'
+```
+
 - output:
 
 ![create game](/images%2FScreenshot%202024-05-13%20at%2011.19.16%E2%80%AFPM.png)
@@ -85,6 +104,13 @@ GET http://localhost:8080/api/games
 Content-Type: application/json
 ```
 
+- Or `cURL`
+
+```shell
+curl -X GET --location "http://localhost:8080/api/games" \
+    -H "Content-Type: application/json"
+```
+
 - output:
 
 ![get all games](/images%2FScreenshot%202024-05-13%20at%2011.21.28%E2%80%AFPM.png)
@@ -95,6 +121,13 @@ Content-Type: application/json
 ### get game by ID
 GET http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09
 Content-Type: application/json
+```
+
+- Or `cURL`
+
+```shell
+curl -X GET --location "http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09" \
+    -H "Content-Type: application/json"
 ```
 
 - output:
@@ -114,6 +147,17 @@ Content-Type: application/json
 }
 ```
 
+- Or `cURL`
+
+```shell
+curl -X PUT --location "http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09" \
+    -H "Content-Type: application/json" \
+    -d '{
+          "field_name":"Soccer UPDATED",
+          "address": "UPDATED ADDRESS"
+        }'
+```
+
 - output:
 
 ![update game by ID](/images%2FScreenshot%202024-05-13%20at%2011.26.54%E2%80%AFPM.png)
@@ -123,6 +167,12 @@ Content-Type: application/json
 ```http request
 ### delete game by ID
 DELETE http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09
+```
+
+- Or `cURL`
+
+```shell
+curl -X DELETE --location "http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09"
 ```
 
 - output:
