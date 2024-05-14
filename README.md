@@ -57,7 +57,7 @@ Accept: application/json
 
 - output:
 
-![Screenshot 2024-05-13 at 11.12.55 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.12.55%E2%80%AFPM.png)
+![Health Checker](/images%2FScreenshot%202024-05-13%20at%2011.12.55%E2%80%AFPM.png)
 
 - here I test with the create game first so that we have record to query back
 
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 - output:
 
-![Screenshot 2024-05-13 at 11.19.16 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.19.16%E2%80%AFPM.png)
+![create game](/images%2FScreenshot%202024-05-13%20at%2011.19.16%E2%80%AFPM.png)
 
 - test query all games
 
@@ -87,7 +87,7 @@ Content-Type: application/json
 
 - output:
 
-![Screenshot 2024-05-13 at 11.21.28 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.21.28%E2%80%AFPM.png)
+![get all games](/images%2FScreenshot%202024-05-13%20at%2011.21.28%E2%80%AFPM.png)
 
 - test query game by ID
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 - output:
 
-![Screenshot 2024-05-13 at 11.24.42 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.24.42%E2%80%AFPM.png)
+![get game by ID](/images%2FScreenshot%202024-05-13%20at%2011.24.42%E2%80%AFPM.png)
 
 - test update game by ID
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 - output:
 
-![Screenshot 2024-05-13 at 11.26.54 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.26.54%E2%80%AFPM.png)
+![update game by ID](/images%2FScreenshot%202024-05-13%20at%2011.26.54%E2%80%AFPM.png)
 
 - test delete game by its ID
 
@@ -127,5 +127,5 @@ DELETE http://localhost:8080/api/games/game/3a6403a9-527e-439a-a9c9-412e12d3be09
 
 - output:
 
-![Screenshot 2024-05-13 at 11.28.42 PM.png](/images%2FScreenshot%202024-05-13%20at%2011.28.42%E2%80%AFPM.png)
+![delete game by ID](/images%2FScreenshot%202024-05-13%20at%2011.28.42%E2%80%AFPM.png)
 
